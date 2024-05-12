@@ -1,0 +1,136 @@
+.main {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* scroll bar styling */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Title styles */
+
+.title-bg {
+  height: 40vh;
+  background: #ffae00
+    url("https://images.pexels.com/photos/39857/leopard-leopard-spots-animal-wild-39857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+}
+
+.left {
+  width: 40vw;
+  margin: 5vh 5vw 7vh;
+  color: black;
+  background-color: #ffae00b0;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  display: flex;
+  width: 40vw;
+  font-size: 1.3em;
+  height: 5vh;
+  border: none;
+}
+
+.search-btn {
+  width: 15vw;
+  background-color: #ffae00;
+  border: none;
+  height: 5.2vh;
+}
+
+.search-btn:hover {
+  background-color: #be8200;
+}
+
+/* grid styling */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 8vh 5vw;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+}
+
+/* Content styles */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  color: #ffae00;
+  width: 90%;
+  height: 30vh;
+  /* margin: 3vh 3vw 0; */
+}
+
+.content-img {
+  max-width: 90%;
+  max-height: 70%;
+  align-self: center;
+  padding-top: 1vh;
+}
+
+.content-title {
+  margin: 0 0 0 2vw;
+  padding: 0;
+}
+
+.content-subtitle {
+  margin: 0 0 0 2vw;
+  padding: 0 0 1vh;
+}
+
+@media (max-width: 767px) {
+  .left {
+    width: 80vw;
+  }
+
+  .search-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-input,
+  .search-btn {
+    width: 90vw;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-height: 750px) {
+  .title-bg {
+    height: 50vh;
+  }
+
+  .left {
+    margin-bottom: 0;
+    width: 80vw;
+  }
+}

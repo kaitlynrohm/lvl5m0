@@ -1,0 +1,110 @@
+.flex,
+.flexSmall {
+  display: flex;
+  align-items: center;
+}
+
+.flex {
+  justify-content: space-between;
+  width: 100%;
+  height: 7vh;
+  top: 0;
+  background-color: #000000;
+}
+
+.flexSmall {
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.navbar {
+  list-style-type: none;
+}
+
+.flexItem,
+.navItem {
+  margin-left: 3vw;
+  font-size: 0.8em;
+  color: #c58700;
+  cursor: pointer;
+}
+
+.navItem:hover,
+.company:hover {
+  color: #ffae00;
+}
+
+.logo {
+  height: 5vh;
+}
+
+.company {
+  font-size: 1em;
+  margin-left: 1vw;
+}
+
+.hamburgerMenu {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  z-index: 10;
+}
+
+.burger {
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 10px;
+  background-color: #c58700;
+  transform-origin: 1px;
+  transition: all 0.3s linear;
+}
+
+.loginButton {
+  margin-right: 3vw;
+  padding: 1vh 2vw;
+  border: 1px solid #c58700;
+}
+
+.loginButton:hover {
+  background-color: #ffae00;
+  border: 1px solid #855b00;
+  color: #855b00;
+}
+
+/* Make the page dynamic */
+@media (max-width: 767px) {
+  .hamburgerMenu {
+    display: block;
+    margin-right: 10px;
+    z-index: 10;
+  }
+
+  .navbar {
+    background-color: #000000;
+    position: absolute;
+    width: 50vw;
+    margin-top: 5vh;
+    padding-bottom: 5px;
+    top: 0;
+    right: 0;
+  }
+
+  .loginButton {
+    border: none;
+  }
+
+  .navItem {
+    padding: 5px 10px;
+  }
+
+  .navItem:hover {
+    border: 1px solid #ffae00;
+  }
+}
