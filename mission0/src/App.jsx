@@ -23,6 +23,15 @@ function App() {
         <div className="grid-item">
           <Content text="Lorem ipsum" subText="Est venenatis" img={img3} />
         </div>
+        <div className="grid-item">
+          <Content text="Lorem ipsum" subText="Est venenatis" img={img1} />
+        </div>
+        <div className="grid-item">
+          <Content text="Lorem ipsum" subText="Est venenatis" img={img2} />
+        </div>
+        <div className="grid-item">
+          <Content text="Lorem ipsum" subText="Est venenatis" img={img3} />
+        </div>
       </div>
     </div>
   );

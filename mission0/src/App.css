@@ -1,5 +1,5 @@
 .main {
-  width: 100vw;
+  width: 99.55vw;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -8,17 +8,17 @@
 /* scroll bar styling */
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 0.5vw;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #000;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #ffae00;
 }
 
 /* Handle on hover */
@@ -36,10 +36,14 @@
 }
 
 .left {
-  width: 40vw;
+  max-width: 40vw;
   margin: 5vh 5vw 7vh;
   color: black;
   background-color: #ffae00b0;
+}
+
+.title {
+  font-size: 2.5em;
 }
 
 .search-form {
@@ -76,6 +80,7 @@
 .grid-item {
   display: flex;
   justify-content: center;
+  margin-bottom: 5vh;
 }
 
 /* Content styles */
@@ -109,7 +114,7 @@
 
 @media (max-width: 767px) {
   .left {
-    width: 80vw;
+    max-width: 80vw;
   }
 
   .search-form {
@@ -120,7 +125,15 @@
   .search-input,
   .search-btn {
     width: 90vw;
-    margin-bottom: 5px;
+    font-size: 1em;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-item {
+    margin-bottom: 10vh;
   }
 }
 
